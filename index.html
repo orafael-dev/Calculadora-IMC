@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Calculadora IMC</h1>
+      </div>
+
+      <div class="inputs-container">
+        <div class="input-container">
+          <label for="name" class="btn">Nome</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="input-container">
+          <label for="height" class="btn">Altura</label>
+          <input type="text" id="height" placeholder="(m)" />
+        </div>
+        <div class="input-container">
+          <label for="width" class="btn">Peso</label>
+          <input type="text" id="width" placeholder="(kg)" />
+        </div>
+      </div>
+
+      <div class="calculateBtn-container">
+        <button id="calculate-btn">Calcular</button>
+      </div>
+
+      <div class="result"></div>
+    </div>
+  </body>
+</html>
