@@ -1,11 +1,13 @@
 # Projeto - Calculadora IMC
 
-Projeto simples utilizando conceitos de Javascript e SASS.
+Projeto simples utilizando conceitos de Javascript e estilização com CSS/SASS.
 
 ## Visão Geral
 
 Este é um projeto simulando o funcionamento de uma calcualdora de IMC.
-Foram utilizados neste projeto: Javascript para manipulação de DOM e lógica do sistema. SASS como pré-processador de CSS.
+Foram utilizados neste projeto: 
+- Javascript para manipulação de DOM e lógica do sistema. 
+- SASS como pré-processador de CSS.
 
 ## Contato
 
