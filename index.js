@@ -9,12 +9,12 @@ calculate.addEventListener("click", (w, h) => {
   function calculateImc() {
     const fullname = document.getElementById("name").value;
     const correctFullname = firstLetterConversor(fullname);
-    const height = parseFloat(document.getElementById("height").value);
-    const weight = parseFloat(document.getElementById("weight").value);
+    const height = document.getElementById("height").value;
+    const weight = document.getElementById("weight").value;
 
-    if (fullname !== "" && height !== "" && weight !== "typeof number") {
-      let rating = "";
+    if (fullname !== "" && height !== "" && weight !== "") {
       const calcResult = (weight / (height * height)) * 10000;
+      let rating = "";
 
       if (calcResult < 18.5) {
         rating = "abaixo do peso.";
@@ -29,7 +29,8 @@ calculate.addEventListener("click", (w, h) => {
       } else {
         rating = "acima do peso ideal, com obesidade grau III";
       }
-
+      
+      console.log("Passou:")
       console.log(`Nome: valor ${fullname} tipo ${typeof fullname}`);
       console.log(`Altura: ${height} tipo ${typeof height}`);
       console.log(`Peso: ${weight} tipo ${typeof weight}`);
@@ -40,6 +41,7 @@ calculate.addEventListener("click", (w, h) => {
       )}. Você está ${rating}`;
     } else {
       alert("Preencha todos os campos!");
+      console.log("Não passou:")
       console.log(`Nome: valor ${fullname} tipo ${typeof fullname}`);
       console.log(`Altura: ${height} tipo ${typeof height}`);
       console.log(`Peso: ${weight} tipo ${typeof weight}`);

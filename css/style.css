@@ -28,6 +28,7 @@ body {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  box-shadow: 0px 0px 10px #6c939a;
 }
 
 h1 {
@@ -44,6 +45,7 @@ h1 {
   justify-content: top;
   align-items: center;
   overflow: hidden;
+  box-shadow: 0px 0px 10px #6c939a;
 }
 
 .inputs-container {
@@ -112,6 +114,11 @@ input {
   width: 300px;
   margin-bottom: 20px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 0px 10px #6c939a;
 }
 
 /*# sourceMappingURL=style.css.map */
